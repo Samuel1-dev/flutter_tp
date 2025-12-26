@@ -11,3 +11,14 @@ NB: laissé l'entête
 Ensuite après clonage vous faites 
 flutter pub get 
 et vous pouvez commancer 
+
+# Deroulement 
+
+quand vous allez finir votre développement vous allez faire 
+git branch nom de la fonctionnalité,
+git checkout nom de la fonctionnalité,
+git add . ,
+git commit -m "votre fonctionnalité",
+git push -u origin nom de la fonctionnalité.
+
+
