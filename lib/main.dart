@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tp_flutter/pages/home_page.dart';
+import 'package:tp_flutter/pages/project_hour_page.dart';
+import 'package:tp_flutter/pages/total_project_page.dart';
+
 void main (){
   runApp( MaterialApp(
    theme: ThemeData(
@@ -20,7 +23,10 @@ void main (){
    debugShowCheckedModeBanner: false,
    initialRoute: '/',
    routes: {
-     '/': (context) => App(),
+     '/': (context) => HomePage(),
+     '/total_project': (context) => TotalProjectPage(),
+     '/project_hour': (context) => ProjectHourPage(),
+     
    },
  
   ));
