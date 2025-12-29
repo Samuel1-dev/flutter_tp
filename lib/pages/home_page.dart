@@ -12,9 +12,17 @@ class App extends StatelessWidget {
       
       body: ListView(
         scrollDirection: Axis.vertical,
+
         children: [
           Container(
-            
+            margin: EdgeInsets.all(10),
+            height: 200,
+            width: 100,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+             color: const Color.fromARGB(255, 21, 19, 51),
+             
+            ),
           )
         ],
       ),
