@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:tp_flutter/layaouts/app_bar.dart';
 
 
-class App extends StatelessWidget {
-  const App({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
