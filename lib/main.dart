@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tp_flutter/pages/dashboard.dart';
+import 'package:tp_flutter/pages/home_page.dart';
 void main (){
   runApp( MaterialApp(
    theme: ThemeData(
