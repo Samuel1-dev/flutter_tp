@@ -7,8 +7,10 @@ NB: laissé l'entête
 
 # Commande 
  Avant de clonner le projet assurer vous d'avoir mis a jour votre flutter avec la commande 
-  flutter upgrade 
-Ensuite après clonage vous faites 
+flutter upgrade 
+Ensuite  vous faites
+git pull origin main 
+puis
 flutter pub get 
 et vous pouvez commancer 
 
