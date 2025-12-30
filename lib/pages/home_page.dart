@@ -14,16 +14,61 @@ class HomePage extends StatelessWidget {
         scrollDirection: Axis.vertical,
 
         children: [
-          Container(
-            margin: EdgeInsets.all(10),
-            height: 200,
-            width: 100,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-             color: const Color.fromARGB(255, 21, 19, 51),
-             
+
+          InkWell(
+            onTap: (){
+              Navigator.pushNamed(context, '/total_project');
+            },
+            child: Padding(
+              padding: EdgeInsetsGeometry.symmetric(horizontal: 15.0, vertical: 10.0),
+              child: Container(
+                height: 300,
+                width: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                 color: const Color.fromARGB(255, 21, 19, 51),
+                 
+                 
+                ),
+              ),
             ),
-          )
+          ),
+        
+           Padding(
+            padding: EdgeInsetsGeometry.symmetric(horizontal: 15.0),
+            child: Container(
+              height: 320,
+              width: 100,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+               color: const Color.fromARGB(255, 21, 19, 51),
+               
+              ),
+            ),
+          ),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 25.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text('Recommended team', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  TextButton(onPressed: () {}, child: const Text('View all', style: TextStyle(color: Color(0xFFA58EFF)))),
+                ],
+              ),
+            ),
+
+           Padding(
+            padding: EdgeInsetsGeometry.symmetric(horizontal: 15.0,),
+            child: Container(
+              height: 320,
+              width: 100,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+               color: const Color.fromARGB(255, 21, 19, 51),
+               
+              ),
+            ),
+          ),
         ],
       ),
       
