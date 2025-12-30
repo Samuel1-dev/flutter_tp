@@ -13,6 +13,7 @@ class _TotalProjectPageState extends State<TotalProjectPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: GlobalAppbar(),
+      
     );
   }
 }
