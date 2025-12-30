@@ -41,7 +41,7 @@ class _GlobalAppbarState extends State<GlobalAppbar> {
         decoration: BoxDecoration(
           
           // ignore: deprecated_member_use
-          color: Colors.white.withOpacity(0.05), 
+          color: Colors.white.withOpacity(0.05),  
           borderRadius: BorderRadius.circular(10),
           border: Border.all(color: Colors.white12), 
         ),
