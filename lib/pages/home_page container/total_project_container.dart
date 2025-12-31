@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:tp_flutter/pages/home_page container/diagramme.dart';
 class TotalProjectContainer extends StatelessWidget {
   const TotalProjectContainer({super.key});
 
@@ -31,11 +31,7 @@ class TotalProjectContainer extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 20),
-                    Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                
-                Column(
+                Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
@@ -46,36 +42,91 @@ class TotalProjectContainer extends StatelessWidget {
                         color: Colors.deepPurpleAccent,
                       ),
                     ),
-                    Text(
-                      "Total project",
-                      style: TextStyle(color: Colors.grey[600], fontSize: 14),
-                    ),
-                    SizedBox(height: 8),
-                    Row(
-                      children: [
-                        Icon(Icons.arrow_outward, color: Colors.green, size: 16),
-                        SizedBox(width: 4),
-                        Text(
-                          "+1 New",
-                          style: TextStyle(
-                            color: Colors.green,
-                            fontWeight: FontWeight.bold,
+                    SizedBox(width:  8),
+                    
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 20),
+                      child: Column(
+                        children: [
+                          Text(
+                            "Total project",
+                            style: TextStyle(color: Colors.grey[600], fontSize: 14),
                           ),
+                           SizedBox(height:  4),
+                          
+                          Row(
+                          children: [
+                            Icon(Icons.arrow_outward, color: Colors.green, size: 16),
+                            SizedBox(width: 4),
+                            Text(
+                              "+1 New",
+                              style: TextStyle(
+                                color: Colors.green,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
                         ),
-                      ],
+                        ]
+                      ),
                     ),
+                    Spacer(),
+                   Diagramme(),
                   ],
-                ),
-               
-                
-              ],
-            ),
-
-                    ],
+                   ),
+                   SizedBox(height: 10,),
+                  _buildLegendSection()
+                  ],
                   ),
                 ),
               ),
           );
         
   }
+}
+
+Widget _buildLegendSection() {
+  return Column(
+    children: [
+      _buildLegendItem("To do", 3, Color(0xFF2D2D3A)),       
+      _buildLegendItem("In progress", 5, Color(0xFF9147FF)), 
+      _buildLegendItem("In review", 1, Color(0xFFF1A55E)),   
+      _buildLegendItem("Complete", 5, Color(0xFF42BE65)),    
+    ],
+  );
+}
+
+Widget _buildLegendItem(String label, int count, Color color) {
+  return Padding(
+    padding: const EdgeInsets.symmetric(vertical: 4.0), 
+    child: Row(
+      children: [
+        Container(
+          width: 35,
+          height: 4,
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+        SizedBox(width: 16), 
+        Text(
+          label,
+          style: TextStyle(
+            fontSize: 15,
+            color: Colors.grey[600], 
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        Spacer(),
+        Text(
+          count.toString(),
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
+    ),
+  );
 }
