@@ -20,6 +20,7 @@ class _TotalProjectPageState extends State<TotalProjectPage> {
     return Scaffold(
       backgroundColor: bgColor,
       appBar: GlobalAppbar(),
+      
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(

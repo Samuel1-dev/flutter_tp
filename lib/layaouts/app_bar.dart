@@ -18,15 +18,15 @@ class _GlobalAppbarState extends State<GlobalAppbar> {
     return  AppBar(
       backgroundColor: const Color.fromARGB(255, 16, 14, 48),
     elevation: 1,
-  leading: Icon(Icons.menu),
+  leading: Icon(Icons.menu,color: Colors.grey),
   title: Row(
     children: [
       Icon(Icons.rocket_launch, color: Colors.purpleAccent), 
       SizedBox(width: 8),
       Text("Fobework", style: TextStyle(fontWeight: FontWeight.bold)),
       Spacer(),
-      IconButton(icon: const Icon(Icons.history, size: 20), onPressed: () {}),
-      IconButton(icon: const Icon(Icons.notifications_none, size: 20), onPressed: () {}),
+      IconButton(icon: const Icon(Icons.history, size: 20,color: Colors.grey), onPressed: () {}),
+      IconButton(icon: const Icon(Icons.notifications_none, size: 20, color: Colors.grey,), onPressed: () {}),
       Text("Pro", style: TextStyle(fontSize: 12)),
       CupertinoSwitch(value: false, onChanged: (v) {}),
     ],

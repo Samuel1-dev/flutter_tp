@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tp_flutter/layaouts/app_bar.dart';
+import 'package:tp_flutter/pages/home_page container/project_hour_container.dart';
+import 'package:tp_flutter/pages/home_page container/total_project_container.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -14,38 +16,8 @@ class HomePage extends StatelessWidget {
         scrollDirection: Axis.vertical,
 
         children: [
-
-          InkWell(
-            onTap: (){
-              Navigator.pushNamed(context, '/total_project');
-            },
-            child: Padding(
-              padding: EdgeInsetsGeometry.symmetric(horizontal: 15.0, vertical: 10.0),
-              child: Container(
-                height: 300,
-                width: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                 color: const Color.fromARGB(255, 21, 19, 51),
-                 
-                 
-                ),
-              ),
-            ),
-          ),
-        
-           Padding(
-            padding: EdgeInsetsGeometry.symmetric(horizontal: 15.0),
-            child: Container(
-              height: 320,
-              width: 100,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-               color: const Color.fromARGB(255, 21, 19, 51),
-               
-              ),
-            ),
-          ),
+          TotalProjectContainer(),         
+          ProjectHourContainer(),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 25.0),
               child: Row(
