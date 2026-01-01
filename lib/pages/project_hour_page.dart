@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tp_flutter/layaouts/app_bar.dart';
+import 'package:tp_flutter/layaouts/drawer.dart';
 
 class ProjectHourPage extends StatefulWidget {
   const ProjectHourPage({super.key});
@@ -12,6 +13,8 @@ class _ProjectHourPageState extends State<ProjectHourPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: GlobalAppbar(),
+      drawer: GlobalDrawer(),
   backgroundColor: const Color(0xFF0D0D1E),
       appBar: const GlobalAppbar(),
       body: SingleChildScrollView(

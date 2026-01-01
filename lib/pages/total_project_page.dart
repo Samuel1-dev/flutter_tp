@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tp_flutter/layaouts/app_bar.dart';
+import 'package:tp_flutter/layaouts/drawer.dart';
 import 'package:tp_flutter/layaouts/app_bar.dart'; // Ton AppBar inchangé
 
 class TotalProjectPage extends StatefulWidget {
@@ -20,6 +22,7 @@ class _TotalProjectPageState extends State<TotalProjectPage> {
     return Scaffold(
       backgroundColor: bgColor,
       appBar: GlobalAppbar(),
+      drawer: GlobalDrawer(),
       
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 16),

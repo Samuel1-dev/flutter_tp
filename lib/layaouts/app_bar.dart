@@ -18,7 +18,6 @@ class _GlobalAppbarState extends State<GlobalAppbar> {
     return  AppBar(
       backgroundColor: const Color.fromARGB(255, 16, 14, 48),
     elevation: 1,
-  leading: Icon(Icons.menu,color: Colors.grey),
   title: Row(
     children: [
       Icon(Icons.rocket_launch, color: Colors.purpleAccent), 
