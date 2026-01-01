@@ -15,8 +15,6 @@ class _ProjectHourPageState extends State<ProjectHourPage> {
     return Scaffold(
       appBar: GlobalAppbar(),
       drawer: GlobalDrawer(),
-  backgroundColor: const Color(0xFF0D0D1E),
-      appBar: const GlobalAppbar(),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
