@@ -17,23 +17,23 @@ class _GlobalDrawerState extends State<GlobalDrawer> {
         children: [
           const DrawerHeader(
             decoration: BoxDecoration(color: Color(0xFFA58EFF)), 
-            child: Text("Menu", style: TextStyle(color: Colors.white, fontSize: 24)),
+            child: Text("Menu", style: TextStyle( fontSize: 24)),
           ),
           ListTile(
-            leading: const Icon(Icons.home, color: Colors.white),
-            title: const Text("Accueil", style: TextStyle(color: Colors.white)),
+            leading: const Icon(Icons.home, ),
+            title: const Text("Accueil"),
             onTap: () => Navigator.pushNamed(context, '/'), 
           ),
           ListTile(
-            leading: const Icon(Icons.open_in_new, color: Colors.white),
-            title: const Text("Total project", style: TextStyle(color: Colors.white)),
+            leading: const Icon(Icons.open_in_new),
+            title: const Text("Total project"),
             onTap: () {
               Navigator.pushNamed(context, '/total_project');
             },
           ),
           ListTile(
-            leading: const Icon(Icons.open_in_new, color: Colors.white),
-            title: const Text("Project hour", style: TextStyle(color: Colors.white)),
+            leading: const Icon(Icons.open_in_new),
+            title: const Text("Project hour"),
             onTap: () {
               Navigator.pushNamed(context, '/project_hour');
             },

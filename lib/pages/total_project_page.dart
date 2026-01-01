@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tp_flutter/layaouts/app_bar.dart';
 import 'package:tp_flutter/layaouts/drawer.dart';
-import 'package:tp_flutter/layaouts/app_bar.dart'; // Ton AppBar inchangé
 
 class TotalProjectPage extends StatefulWidget {
   const TotalProjectPage({super.key});
