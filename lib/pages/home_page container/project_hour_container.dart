@@ -23,7 +23,7 @@ class ProjectHourContainer extends StatelessWidget {
              style: TextStyle(
                  fontSize: 18,
                  fontWeight: FontWeight.bold,
-                 color: Colors.grey
+                 color: const Color.fromARGB(255, 249, 212, 212)
                ),
              ),
              SizedBox(height: 8,),
@@ -102,7 +102,7 @@ Widget _buildItem(String title, String hours, String percent, double progress) {
       child: Row(
         children: [
          
-          Icon(Icons.open_in_new, color: Colors.grey[600], size: 18),
+          Icon(Icons.open_in_new, color:  const Color.fromARGB(255, 249, 212, 212), size: 18),
           SizedBox(width: 12),
           
         
@@ -110,7 +110,7 @@ Widget _buildItem(String title, String hours, String percent, double progress) {
             flex: 4,
             child: Text(
               title,
-              style: TextStyle(color: Colors.grey[500], fontSize: 14, fontWeight: FontWeight.w400),
+              style: TextStyle(color:  const Color.fromARGB(255, 249, 212, 212), fontSize: 14, fontWeight: FontWeight.w400),
             ),
           ),
           
@@ -119,7 +119,7 @@ Widget _buildItem(String title, String hours, String percent, double progress) {
             flex: 2,
             child: Text(
               hours,
-              style: TextStyle(color: Colors.grey[500], fontSize: 14),
+              style: TextStyle(color:  const Color.fromARGB(255, 249, 212, 212), fontSize: 14),
             ),
           ),
           
@@ -128,7 +128,7 @@ Widget _buildItem(String title, String hours, String percent, double progress) {
             flex: 2,
             child: Text(
               percent,
-              style: TextStyle(color: Colors.grey[500], fontSize: 14),
+              style: TextStyle(color:  const Color.fromARGB(255, 249, 212, 212), fontSize: 14),
             ),
           ),
           
