@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tp_flutter/layaouts/app_bar.dart';
 import 'package:tp_flutter/pages/home_page container/project_hour_container.dart';
 import 'package:tp_flutter/pages/home_page container/total_project_container.dart';
-
+import 'package:tp_flutter/layaouts/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: GlobalAppbar(),
-      
+      drawer: GlobalDrawer(),
       body: ListView(
         scrollDirection: Axis.vertical,
 

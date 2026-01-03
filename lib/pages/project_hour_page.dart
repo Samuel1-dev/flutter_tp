@@ -20,23 +20,7 @@ class _ProjectHourPageState extends State<ProjectHourPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // --- Barre de Recherche ---
-            TextField(
-              style: const TextStyle(color: Colors.white),
-              decoration: InputDecoration(
-                hintText: "Search",
-                hintStyle: const TextStyle(color: Colors.white38),
-                prefixIcon: const Icon(Icons.search, color: Colors.white38),
-                suffixIcon: const Icon(Icons.tune, color: Colors.white38),
-                filled: true,
-                fillColor: Colors.white.withOpacity(0.05),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(15),
-                  borderSide: BorderSide.none,
-                ),
-              ),
-            ),
-            const SizedBox(height: 25),
+            
 
             // --- Menu Onglets (C'est ici que l'alignement est géré) ---
             SingleChildScrollView(
