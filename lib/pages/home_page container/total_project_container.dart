@@ -27,7 +27,7 @@ class TotalProjectContainer extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: Colors.grey
+                          color: const Color.fromARGB(255, 249, 212, 212)
                           
                         ),
                       ),
@@ -115,7 +115,7 @@ Widget _buildLegendItem(String label, int count, Color color) {
           label,
           style: TextStyle(
             fontSize: 15,
-            color: Colors.grey[600], 
+            color: const Color.fromARGB(255, 249, 212, 212), 
             fontWeight: FontWeight.w500,
           ),
         ),
