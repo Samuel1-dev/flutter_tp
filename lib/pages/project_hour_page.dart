@@ -44,14 +44,14 @@ class _ProjectHourPageState extends State<ProjectHourPage> {
               title: "Startup project",
               due: "Mar 25",
               progress: 0.45,
-              imageUrl: 'assets/première_image.jpeg',
+              imageUrl: 'assets/première_image.jpg',
                 
               ),
             _buildProjectCard(
               title: "Agency Branding project",
               due: "Mar 25",
               progress: 0.45,
-              imageUrl: 'assets/deuxième_image.jpeg',
+              imageUrl: 'assets/deuxieme_image.jpg',
                 
               ),
 
@@ -59,7 +59,7 @@ class _ProjectHourPageState extends State<ProjectHourPage> {
               title: "Startup project",
               due: "Mar 25",
               progress: 0.45,
-              imageUrl: 'assets/troisième_image.jpeg',
+              imageUrl: 'assets/une_image.jpg',
                 
               ),
             
@@ -182,11 +182,10 @@ class _ProjectHourPageState extends State<ProjectHourPage> {
                       height: 25,
                       child: Stack(
                         children: [
-                          Positioned(left: 0, child: _buildAvatar("assets/img_visage3.jpg")),
-                          Positioned(left: 15, child: _buildAvatar("assets/img_visage4.jpg")),
-                          Positioned(left: 30, child: _buildAvatar("assets/img_visage2.jpg")),
-                          Positioned(left: 45, child: _buildAvatar("assets/img_visage1.jpg")),
-                          
+                          Positioned(left: 0, child: _buildAvatar("assets/img_visage1.jpeg")),
+                          Positioned(left: 15, child: _buildAvatar("assets/img_visage2.jpeg")),
+                          Positioned(left: 30, child: _buildAvatar("assets/img_visage3.jpeg")),
+                          Positioned(left: 45, child: _buildAvatar("assets/img_visage4.jpeg")),
                           const Positioned(
                             left: 60, 
                             child: CircleAvatar(
